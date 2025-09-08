@@ -102,6 +102,7 @@ body {
   font-size: 3rem;
   color: #020202;
   margin-bottom: 20px;
+  margin-top: 40px;
 }
 .hero-content h1 span {
   color: #ff9800; /* Accent color for Samavia Naz */
@@ -706,4 +707,10 @@ footer {
 
 @media (max-width: 600px) {
   .about-text h2 { font-size: 2.2rem; }
+}
+@media (max-width: 768px) {
+  .about-container {
+    display: flex;
+    flex-direction: column-reverse; /* content pehle, image baad me */
+  }
 }

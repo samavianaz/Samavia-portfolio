@@ -28,14 +28,12 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
+
 // Handle form submission
 document.getElementById('contactForm').addEventListener('submit', function (e) {
     e.preventDefault();
-    alert('Your message has been sent!');
-});
 
-
-    // Simple form validation (optional enhancement)
+    // Simple form validation
     const name = this.name.value.trim();
     const email = this.email.value.trim();
     const message = this.message.value.trim();
@@ -51,3 +49,4 @@ document.getElementById('contactForm').addEventListener('submit', function (e) {
 
     // Reset the form
     this.reset();
+});
